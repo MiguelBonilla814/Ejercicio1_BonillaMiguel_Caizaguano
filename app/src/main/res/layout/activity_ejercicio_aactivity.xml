@@ -16,7 +16,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editText_valor1"
+        android:id="@+id/editText_valor1_suma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -24,7 +24,7 @@
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/editText_valor2"
+        android:id="@+id/editText_valor2_suma"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
