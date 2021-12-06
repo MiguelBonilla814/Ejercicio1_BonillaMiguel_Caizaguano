@@ -4,4 +4,6 @@
     <string name="button_ejercicio2">Ejercicio B</string>
     <string name="tv_valor1">Numero 1</string>
     <string name="tv_valor2">Numero 2</string>
+    <string name="tv_resultado">Resultado</string>
+    <string name="btn_restar">Restar</string>
 </resources>

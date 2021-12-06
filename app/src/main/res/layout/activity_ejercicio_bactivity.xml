@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".EjercicioB_Activity">
 
     <EditText
         android:id="@+id/editTextTextValor1"
         android:layout_width="match_parent"
-        android:layout_height="71dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="@string/tv_valor1"
         android:inputType="textPersonName" />
@@ -28,6 +29,16 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:onClick="restar"
+        android:text="@string/btn_restar" />
+
+    <EditText
+        android:id="@+id/editTextTextResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/tv_resultado"
+        android:inputType="textPersonName" />
 
 </LinearLayout>
