@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ejercicio1_BonillaMiguel_Caizaguano</string>
+    <string name="button_ejercicio1">Ejercicio A</string>
+    <string name="button_ejercicio2">Ejercicio B</string>
 </resources>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio1_BonillaMiguel_Caizaguano">
         <activity
+            android:name=".EjercicioB_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".EjercicioA_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
