@@ -2,4 +2,9 @@
     <string name="app_name">Ejercicio1_BonillaMiguel_Caizaguano</string>
     <string name="button_ejercicio1">Ejercicio A</string>
     <string name="button_ejercicio2">Ejercicio B</string>
+    <string name="text_view_titulo_suma">Suma</string>
+    <string name="editTextHint_valor1">Valor 1</string>
+    <string name="editTextHint_valor2">Valor 2</string>
+    <string name="button_sumar">Sumar</string>
+    <string name="textView_resultado"> </string>
 </resources>
