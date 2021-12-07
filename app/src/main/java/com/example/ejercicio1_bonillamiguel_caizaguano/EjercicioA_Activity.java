@@ -38,7 +38,7 @@ public class EjercicioA_Activity extends AppCompatActivity {
         data[3] = "";
         data[4] = "";
 
-        for (int i = 0; i < v2.length() + 2; i++){
+        for (int i = 0; i < v2.length() + v1.length() + 2; i++){
             data[3] += "-";
         }
 
@@ -69,8 +69,9 @@ public class EjercicioA_Activity extends AppCompatActivity {
     }
 
 
-    public static String SumaR(String num1, String num2) {
+    public static String SumaA(String num1, String num2) {
         String res = null;
+        int llevo = 0;
         int a = Math.abs(num1.length() - num2.length());
         if (num1.length() > num2.length()) {
             for (int i = 0; i < a; i++) {
@@ -83,6 +84,23 @@ public class EjercicioA_Activity extends AppCompatActivity {
         }
         res = num1 + "\n" + num2;
 
+        for (int i = num1.length() - 1; i >= 0; i--){
+            String b = " " + num1.charAt(i);
+            String c = " " + num2.charAt(i);
+            int aux = Integer.parseInt(b) + Integer.parseInt(c) + llevo;
+            if (aux > 9) {
+                res = aux%10 + res;
+                llevo = aux/10;
+            }
+            else
+            {
+                res = aux + res;
+                llevo = 0;
+            }
+            if (llevo > 0)
+                res = llevo + res;
+        }
+        return res;
     }
 
 }
