@@ -35,11 +35,13 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Suma"
         android:text="@string/button_sumar" />
 
     <TextView
         android:id="@+id/textView_resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/textView_resultado" />
+        android:text="@string/textView_resultado"
+        android:textAlignment="center" />
 </LinearLayout>
