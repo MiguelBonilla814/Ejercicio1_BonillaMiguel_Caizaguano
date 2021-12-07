@@ -43,11 +43,26 @@ public class EjercicioA_Activity extends AppCompatActivity {
         }
 
         final int size = data.length;
+
+        String valorTotal = String.valueOf(SumaAcarreo(n1, n2));
+        data[4] = valorTotal.toString();
+
         for (int i = 0; i < size; i++)
         {
             resultado += (data[i] + "\n");
         }
 
         textView_res.setText(resultado);
+    }
+
+
+    public static long SumaAcarreo(long num1, long num2){
+        long acarreo;
+        while (num2 != 0){
+            acarreo = num1 & num2;
+            num1 = num1 ^ num2;
+            num2 = acarreo << 1;
+        }
+        return num1;
     }
 }
