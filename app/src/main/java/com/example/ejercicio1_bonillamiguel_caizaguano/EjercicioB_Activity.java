@@ -13,8 +13,8 @@ public class EjercicioB_Activity extends AppCompatActivity {
     EditText editextValor1;
     EditText editextValor2;
     EditText editextResultado;
-    ArrayList <Integer> numero1 = new ArrayList<Integer>();
-    ArrayList <Integer> numero2 = new ArrayList<Integer>();
+    String result;
+    Integer borrow;
 
 
     @Override
@@ -30,14 +30,16 @@ public class EjercicioB_Activity extends AppCompatActivity {
     public void restar (View view) {
          long numero1 = Long.parseLong(editextValor1.getText().toString());
         long numero2 = Long.parseLong(editextValor2.getText().toString());
-        long  resultado = numero1 - numero2;
 
+        String  n1 = editextValor1.getText().toString();
+        String  n2 = editextValor1.getText().toString();
+        String resultado = minus(n1,n2);
         editextResultado.setText(String.valueOf(resultado));
 
     }
 
-/*
-    public static String minus(String firstNum, String secondNum){
+
+    public  String minus(String firstNum, String secondNum){
         result = "";
         String sign = "";
         if(firstNum.equals(secondNum)){
@@ -57,7 +59,7 @@ public class EjercicioB_Activity extends AppCompatActivity {
         }
         // Los números grandes comienzan desde el bit bajo y disminuyen el número poco a poco
         int index = firstNum.length() - 1;
-        int préstamos = 0; // Grabar préstamos
+        int préstamos = 0;
         while(index >= 0){
             int left = firstNum.charAt(index) - secondNum.charAt(index) + borrow;
             if(left < 0){
@@ -67,12 +69,12 @@ public class EjercicioB_Activity extends AppCompatActivity {
             result = left + result;
             index--;
         }
-        // Eliminar el exceso de 0 inicial
+
         while(result.indexOf("0") == 0){
             result = result.substring(1);
         }
         return sign + result;
     }
-*/
+
 
 }
