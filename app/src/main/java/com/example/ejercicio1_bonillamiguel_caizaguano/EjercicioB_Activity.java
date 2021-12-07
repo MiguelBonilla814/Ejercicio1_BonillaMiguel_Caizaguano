@@ -19,7 +19,7 @@ public class EjercicioB_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_ejercicio_bactivity);
 
         editextValor1 = findViewById(R.id.editTextTextValor1);
-        editextValor2 = findViewById(R.id.editTextValor2);
+        editextValor2 = findViewById(R.id.editTextTextValor2);
         editextResultado = findViewById(R.id.editTextTextResultado);
 
     }
@@ -30,7 +30,7 @@ public class EjercicioB_Activity extends AppCompatActivity {
 
         long  resultado = numero1 - numero2;
 
-        editextResultado.setText(String.valueOf(resultado));
+
 
     }
 
