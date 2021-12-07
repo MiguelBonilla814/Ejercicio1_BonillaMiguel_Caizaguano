@@ -67,4 +67,22 @@ public class EjercicioA_Activity extends AppCompatActivity {
         }
         return num1;
     }
+
+
+    public static String SumaR(String num1, String num2) {
+        String res = null;
+        int a = Math.abs(num1.length() - num2.length());
+        if (num1.length() > num2.length()) {
+            for (int i = 0; i < a; i++) {
+                num2 = "0" + num2;
+            }
+        } else {
+            for (int i = 0; i < a; i++) {
+                num1 = "0" + num1;
+            }
+        }
+        res = num1 + "\n" + num2;
+
+    }
+
 }
