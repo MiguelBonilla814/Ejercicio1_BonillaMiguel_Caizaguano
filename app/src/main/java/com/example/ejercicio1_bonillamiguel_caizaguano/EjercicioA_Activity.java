@@ -42,10 +42,12 @@ public class EjercicioA_Activity extends AppCompatActivity {
             data[3] += "-";
         }
 
-        final int size = data.length;
+
 
         String valorTotal = String.valueOf(SumaAcarreo(n1, n2));
         data[4] = valorTotal.toString();
+
+        final int size = data.length;
 
         for (int i = 0; i < size; i++)
         {
