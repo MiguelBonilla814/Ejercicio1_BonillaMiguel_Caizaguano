@@ -6,19 +6,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+
 public class EjercicioB_Activity extends AppCompatActivity {
 
     EditText editextValor1;
     EditText editextValor2;
     EditText editextResultado;
-    String result;
+    ArrayList <Integer> numero1 = new ArrayList<Integer>();
+    ArrayList <Integer> numero2 = new ArrayList<Integer>();
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicio_bactivity);
-
         editextValor1 = findViewById(R.id.editTextTextValor1);
         editextValor2 = findViewById(R.id.editTextTextValor2);
         editextResultado = findViewById(R.id.editTextTextResultado);
@@ -28,11 +30,9 @@ public class EjercicioB_Activity extends AppCompatActivity {
     public void restar (View view) {
          long numero1 = Long.parseLong(editextValor1.getText().toString());
         long numero2 = Long.parseLong(editextValor2.getText().toString());
-
         long  resultado = numero1 - numero2;
 
         editextResultado.setText(String.valueOf(resultado));
-
 
     }
 
